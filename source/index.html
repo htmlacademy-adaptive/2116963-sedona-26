@@ -1,12 +1,131 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <div class="page__container">
+    <header class="header">
+      <img class="header__logo" width height src alt="Логотип Седоны.">
+      <nav class="header__navigation navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Главное меню.</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href>Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href>Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href>Форма Отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href>HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <div class="intro">
+        <img class="intro__description-image" width height src alt="Добро пожаловать в Седону!">
+      </div>
+      <section class="advantages">
+        <h1 class="advantages__intro-title main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="advantages__intro-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="visually-hidden">Преимущества Седоны.</h2>
+        <ol class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantage">
+              <h3 class="advantage__title main-title">Настоящий городок</h3>
+              <p class="advantage__number">— №1 —</p>
+              <p class="advantage__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="advantages__image" width height src alt="Фото улицы Седоны.">
+            <ul class="advantages__list advantages__list--inner">
+              <li class="advantages__item advantage advantage--inner">
+                <h4 class="advantage__title main-title">Жилье</h4>
+                <p class="advantage__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="advantages__item advantage advantage--inner">
+                <h4 class="advantage__title main-title">Еда</h4>
+                <p class="advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="advantages__item advantage advantage--inner">
+                <h4 class="advantage__title main-title">Сувениры</h4>
+                <p class="advantage__description">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__item">
+            <div class="advantage">
+              <h3 class="advantage__title main-title">Там есть Мост Дьявола</h3>
+              <p class="advantage__number">— №2 —</p>
+              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="advantages__image" width height src alt="Мост Дьявола.">
+          </li>
+          <li class="advantages__item advantage">
+            <h3 class="advantage__title main-title">Небольшая площадь</h3>
+            <p class="advantage__number">— №3 —</p>
+            <p class="advantage__description">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="advantages__item advantage">
+            <h3 class="advantage__title main-title">Красивая дорога</h3>
+            <p class="advantage__number">— №4 —</p>
+            <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages__item advantage">
+            <h3 class="advantage__title main-title">Мало туристов</h3>
+            <p class="advantage__number">— №5 —</p>
+            <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ol>
+      </section>
+      <section class="search">
+        <h2 class="search__title main-title">Заинтересовались?</h2>
+        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в седоне</p>
+        <a class="search__button button" href>Найти Гостиницу</a>
+        <div class="search__map"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="visually-hidden">Контакты.</h2>
+      <a class="main-title" href="index.html">#visitsedona</a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВК</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <p class="developed">Разработано
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developed__image" width="27" height="34" src="img/htmlacademy.svg" alt="HTML Academy.">
+        </a>
+      </p>
+    </footer>
+  </div>
+</body>
+
 </html>
