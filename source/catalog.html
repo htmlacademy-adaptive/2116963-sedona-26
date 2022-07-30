@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <div class="page__container">
+    <header class="header">
+      <img class="header__logo" width="185" height="96" src="img/header/logo.svg" alt="Логотип Седоны.">
+      <nav class="header__navigation navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Главное меню.</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Каталог.</h1>
+      <div class="intro">
+        <img class="intro__description-image" width="229" height="39" src="img/intro/sedona.svg" alt="Седона.">
+      </div>
+      <section class="catalog">
+        <div class="catalog__heading text-container">
+          <h2 class="catalog__title">Фото и видео</h2>
+          <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
+        <ul class="catalog__list">
+          <li class="catalog__item card">
+            <a class="card__photo" href="#">
+              <img class="card__image" src="img/catalog/photo-1.jpg" alt>
+            </a>
+            <div class="card__footer">
+              <div class="card__description">
+                <h3 class="card__title">Неродные просторы</h3>
+                <p class="card__author">Автор фото: Борис</p>
+              </div>
+              <div class="card__like">
+                <div class="card__like-icon"></div>
+                <p class="card__like-number">1350</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item card">
+            <a class="card__photo" href="#">
+              <img class="card__image" src="img/catalog/photo-2.jpg" alt>
+            </a>
+            <div class="card__footer">
+              <div class="card__description">
+                <h3 class="card__title">Местная растительность</h3>
+                <p class="card__author">Автор фото: Сергей</p>
+              </div>
+              <div class="card__like">
+                <div class="card__like-icon"></div>
+                <p class="card__like-number">143</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item card">
+            <a class="card__photo" href="#">
+              <img class="card__image" src="img/catalog/photo-3.jpg" alt>
+            </a>
+            <div class="card__footer">
+              <div class="card__description">
+                <h3 class="card__title">Дорога на север</h3>
+                <p class="card__author">Автор фото: Петр</p>
+              </div>
+              <div class="card__like">
+                <div class="card__like-icon"></div>
+                <p class="card__like-number">96</p>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item card">
+            <a class="card__photo" href="#">
+              <img class="card__image" src="img/catalog/photo-4.jpg" alt>
+            </a>
+            <div class="card__footer">
+              <div class="card__description">
+                <h3 class="card__title">Мост дьявола</h3>
+                <p class="card__author">Автор фото: Антон</p>
+              </div>
+              <div class="card__like">
+                <div class="card__like-icon"></div>
+                <p class="card__like-number">254</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <div class="catalog__heading text-container">
+          <h2 class="catalog__title">Все еще сомневаетесь?</h2>
+          <p class="catalog__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
+        </div>
+        <video class="catalog__video"></video>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="visually-hidden">Контакты.</h2>
+      <a class="visit-link" href="index.html">#visitsedona</a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВК</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <p class="developed">Разработано
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developed__image" width="27" height="34" src="img/contacts/htmlacademy.svg" alt="HTML Academy.">
+        </a>
+      </p>
+    </footer>
+  </div>
+</body>
+
 </html>
