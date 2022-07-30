@@ -34,8 +34,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Отзыв о поездке в Седону.</h1>
       <div class="intro">
-        <img class="intro__description-image" width="229" height="39" src="img/intro/sedona.svg"
-          alt="Седона.">
+        <img class="intro__description-image" width="229" height="39" src="img/intro/sedona.svg" alt="Седона.">
       </div>
       <section class="review">
         <div class="review__heading text-container">
@@ -84,15 +83,21 @@
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__radio" type="radio" id="impression-1" name="impression" value="positive" checked>
+                <input class="form__control form__control--radio" type="radio" id="impression-1" name="impression"
+                  value="positive" checked>
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="impression-1">Скорее положительное</label>
               </li>
               <li class="form__item">
-                <input class="form__radio" type="radio" id="impression-2" name="impression" value="negative">
+                <input class="form__control form__control--radio" type="radio" id="impression-2" name="impression"
+                  value="negative">
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="impression-2">Скорее отрицательное</label>
               </li>
               <li class="form__item">
-                <input class="form__radio" type="radio" id="impression-3" name="impression" value="dontknow">
+                <input class="form__control form__control--radio" type="radio" id="impression-3" name="impression"
+                  value="dontknow">
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="impression-3">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -101,20 +106,27 @@
             <legend class="form__legend">Посещенные достопримечательности:</legend>
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__checkbox" type="checkbox" id="visited-1" name="visited" value="devils bridge"
-                  checked>
+                <input class="form__control form__control--checkbox" type="checkbox" id="visited-1" name="visited"
+                  value="devils bridge" checked>
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="visited-1">Мост Дьявола</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox" type="checkbox" id="visited-2" name="visited" value="mount bell" checked>
+                <input class="form__control form__control--checkbox" type="checkbox" id="visited-2" name="visited"
+                  value="mount bell" checked>
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="visited-2">Гора-Колокол</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox" type="checkbox" id="visited-3" name="visited" value="slide park" checked>
+                <input class="form__control form__control--checkbox" type="checkbox" id="visited-3" name="visited"
+                  value="slide park" checked>
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="visited-3">Слайд-парк</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox" type="checkbox" id="visited-4" name="visited" value="red rocks">
+                <input class="form__control form__control--checkbox" type="checkbox" id="visited-4" name="visited"
+                  value="red rocks">
+                <span class="form__mark"></span>
                 <label class="form__control-label" for="visited-4">Красные скалы</label>
               </li>
             </ul>
@@ -122,11 +134,11 @@
           <fieldset class="form__set">
             <legend class="form__legend">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="emotions"></label>
-            <textarea class="form__textarea" id="emotions" name="emotions"
+            <textarea class="form__input" id="emotions" name="emotions"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="form__submit button" type="submit">Отправить отзыв</button>
-          <p class="form__mark">* — обязательные поля</p>
+          <p class="form__reqiured-mark">* — обязательные поля</p>
         </form>
       </section>
     </main>
