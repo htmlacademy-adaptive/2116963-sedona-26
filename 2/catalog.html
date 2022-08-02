@@ -38,10 +38,10 @@
         <img class="intro__description-image" width="229" height="39" src="img/intro/sedona.svg" alt="Седона.">
       </div>
       <section class="catalog">
-        <div class="catalog__heading text-container">
-          <h2 class="catalog__title">Фото и видео</h2>
-          <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-            политике и экономике.</p>
+        <div class="catalog__header text-block">
+          <h2 class="text-block__title">Фото и видео</h2>
+          <p class="text-block__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+            забыть о политике и экономике.</p>
         </div>
         <ul class="catalog__list">
           <li class="catalog__item card">
@@ -106,13 +106,18 @@
           </li>
         </ul>
       </section>
-      <section class="catalog">
-        <div class="catalog__heading text-container">
-          <h2 class="catalog__title">Все еще сомневаетесь?</h2>
-          <p class="catalog__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+      <section class="video">
+        <div class="video__header text-block">
+          <h2 class="text-block__title">Все еще сомневаетесь?</h2>
+          <p class="text-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
         </div>
-        <video class="catalog__video"></video>
+        <div class="video__content">
+          <video class="video__item" width="280" height="177" poster="img/video/video-poster.jpg" src=""></video>
+          <button class="video__play" type="button">
+            <span class="visually-hidden">Проигрывать видео.</span>
+          </button>
+        </div>
       </section>
     </main>
 
@@ -136,10 +141,10 @@
           </a>
         </li>
       </ul>
-      <div class="footer__developed developed">
-        <span class="developed__text">Разработано</span>
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developed__image" width="27" height="34" src="img/contacts/htmlacademy.svg" alt="HTML Academy.">
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" width="27" height="34" src="img/contacts/htmlacademy.svg" alt="HTML Academy.">
         </a>
       </div>
     </footer>
