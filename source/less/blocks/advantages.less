@@ -44,9 +44,9 @@
 
 .advantages__number {
   margin: 0;
-}
 
-.advantages__number::before {
-  counter-increment: advantages;
-  content: "— №" counter(advantages) " —";
+  &::before {
+    counter-increment: advantages;
+    content: "— №" counter(advantages) " —";
+  }
 }
