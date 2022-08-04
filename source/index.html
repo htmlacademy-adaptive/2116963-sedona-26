@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -31,7 +32,7 @@
       </nav>
     </header>
 
-    <main class="main-container">
+    <main class="page__main main-container">
       <h1 class="visually-hidden">Седона - лучший город в Аризоне!</h1>
       <div class="intro">
         <img class="intro__description-image" width="282" height="214" src="img/intro/sedona-welcome.svg"
@@ -44,9 +45,9 @@
         </div>
         <ol class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__container">
+            <div class="advantages__container advantages__container--background">
               <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__number">— №1 —</p>
+              <p class="advantages__number"></p>
               <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img class="advantages__image" width="520" height="260" src="img/advantages/street.jpg"
@@ -69,37 +70,37 @@
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="advantages__container">
+            <div class="advantages__container advantages__container--background">
               <h3 class="advantages__title">Там есть Мост Дьявола</h3>
-              <p class="advantages__number">— №2 —</p>
+              <p class="advantages__number"></p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <img class="advantages__image" width="520" height="260" src="img/advantages/bridge.jpg" alt="Мост Дьявола.">
           </li>
-          <li class="advantages__item advantages__container">
+          <li class="advantages__item advantages__container advantages__container--background--secondary">
             <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__number">— №3 —</p>
+            <p class="advantages__number"></p>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item advantages__container">
+          <li class="advantages__item advantages__container advantages__container--background--secondary">
             <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__number">— №4 —</p>
+            <p class="advantages__number"></p>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item advantages__container">
+          <li class="advantages__item advantages__container advantages__container--background--secondary">
             <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__number">— №5 —</p>
+            <p class="advantages__number"></p>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="search">
         <div class="search__header text-block">
-          <h2 class="text-block__title">Заинтересовались?</h2>
+          <h2 class="text-block__title text-block__title--search">Заинтересовались?</h2>
           <p class="text-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
             предложения гостиниц в седоне</p>
+          <a class="search__button button" href="#">Найти Гостиницу</a>
         </div>
-        <a class="search__button button" href="#">Найти Гостиницу</a>
         <div class="search__map"></div>
       </section>
     </main>
@@ -124,12 +125,10 @@
           </a>
         </li>
       </ul>
-      <div class="footer__copyright copyright">
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" width="27" height="34" src="img/contacts/htmlacademy.svg" alt="HTML Academy.">
-        </a>
-      </div>
+        <img class="copyright__logo" width="27" height="34" src="img/contacts/htmlacademy.svg" alt="HTML Academy.">
+      </a>
     </footer>
   </div>
 </body>
