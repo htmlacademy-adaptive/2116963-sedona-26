@@ -34,7 +34,7 @@
 
     <main class="page__main main-container">
       <h1 class="visually-hidden">Отзыв о поездке в Седону.</h1>
-      <div class="intro">
+      <div class="intro intro--secondary">
         <img class="intro__description-image" width="229" height="39" src="img/intro/sedona.svg" alt="Седона.">
       </div>
       <section class="review">
@@ -149,9 +149,11 @@
             <label class="visually-hidden" for="emotions"></label>
             <textarea class="form__input" id="emotions" name="emotions"
               placeholder="Опишите подробно все свои восторги"></textarea>
+            <div class="form__footer">
+              <button class="form__submit button" type="submit">Отправить отзыв</button>
+              <p class="form__marks">* — обязательные поля</p>
+            </div>
           </fieldset>
-          <button class="form__submit button" type="submit">Отправить отзыв</button>
-          <p class="form__reqiured-mark">* — обязательные поля</p>
         </form>
       </section>
     </main>
@@ -193,15 +195,13 @@
     </div>
   </div>
   <div class="modal modal--success">
-    <div class="modal__container">
-      <div class="modal__content text-block">
-        <h2 class="text-block__title">Ваш отзыв отправлен!</h2>
-        <p class="text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-          опубликуем его на сайте.</p>
-      </div>
-      <div class="modal__button-wrapper">
-        <button class="modal__button button" type="button">Закрыть окно</button>
-      </div>
+    <div class="modal__container text-block">
+      <h2 class="text-block__title">Ваш отзыв отправлен!</h2>
+      <p class="text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+        опубликуем его на сайте.</p>
+    </div>
+    <div class="modal__button-wrapper">
+      <button class="modal__button button" type="button">Закрыть окно</button>
     </div>
   </div>
 
