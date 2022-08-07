@@ -1,5 +1,36 @@
 .text-block {
   text-align: center;
+  max-width: 435px;
+
+  &--advantages {
+    position: relative;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      content: url("../img/advantages/intro-triangle-1.svg");
+      position: absolute;
+      top: -57px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 16px;
+      border-style: solid;
+      border-width: 37px 384px;
+      border-top-color: @color-light;
+      border-right-color: @background-color-1;
+      border-left-color: @background-color-1;
+      border-bottom: none;
+
+      @media (min-width: @tablet) {
+        display: none;
+      }
+    }
+  }
 }
 
 .text-block__title {
@@ -9,8 +40,16 @@
   line-height: 26px;
   color: @color-secondary;
 
+  @media (min-width: @tablet) {
+    font-size: 21px;
+  }
+
   &--search {
     font-size: 21px;
+
+    @media (min-width: @tablet) {
+      font-size: 30px;
+    }
   }
 }
 
