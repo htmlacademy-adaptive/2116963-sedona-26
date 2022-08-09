@@ -49,10 +49,10 @@
             посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__set-wrapper">
+          <div class="form__container form__container--narrow form__container--left">
             <fieldset class="form__set">
               <legend class="form__legend">Представьтесь:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--narrow form__list--left">
                 <li class="form__item">
                   <label class="form__label" for="name">Имя*:</label>
                   <input class="form__input" type="text" id="name" name="name" value="Пётр" required>
@@ -68,10 +68,10 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__set-wrapper">
+          <div class="form__container form__container--narrow form__container--right">
             <fieldset class="form__set">
               <legend class="form__legend">Контактная информация:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--narrow form__list--right">
                 <li class="form__item">
                   <label class="form__label" for="phone">Контактный телефон*:</label>
                   <div class="form__input-container">
@@ -91,10 +91,10 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__set-wrapper">
-            <fieldset class="form__set">
+          <div class="form__container form__container--wide">
+            <fieldset class="form__set form__set--wide">
               <legend class="form__legend">Ваше общее впечатление:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--radio">
                 <li class="form__item">
                   <label class="form__label control">
                     <input class="control__input control__input--radio" type="radio" name="impression" value="positive"
@@ -120,10 +120,10 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__set-wrapper">
-            <fieldset class="form__set">
-              <legend class="form__legend">Посещенные достопримечательности:</legend>
-              <ul class="form__list">
+          <div class="form__container form__container--wide">
+            <fieldset class="form__set form__set--wide">
+              <legend class="form__legend">Посещенные<br>достопримечательности:</legend>
+              <ul class="form__list form__list--checkbox">
                 <li class="form__item">
                   <label class="form__label control">
                     <input class="control__input control__input--checkbox" type="checkbox" name="visited"
@@ -159,11 +159,11 @@
               </ul>
             </fieldset>
           </div>
-          <div class="form__set-wrapper">
-            <fieldset class="form__set">
+          <div class="form__container form__container--wide">
+            <fieldset class="form__set form__set--wide">
               <legend class="form__legend">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="emotions"></label>
-              <textarea class="form__input" id="emotions" name="emotions"
+              <textarea class="form__input form__input--textarea" id="emotions" name="emotions"
                 placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="form__footer">
                 <button class="form__submit button" type="submit">Отправить отзыв</button>
@@ -176,33 +176,35 @@
     </main>
 
     <footer class="footer">
-      <h2 class="visually-hidden">Контакты.</h2>
-      <a class="footer__title" href="index.html">#visitsedona</a>
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВК</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано</span>
-        <svg class="copyright__logo" width="27" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-          aria-label="HTML Academy." focusable="false">
-          <path
-            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-        </svg>
-      </a>
+      <div class="footer__container">
+        <h2 class="visually-hidden">Контакты.</h2>
+        <a class="footer__title" href="index.html">#visitsedona</a>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВК</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            aria-label="HTML Academy." focusable="false">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
 
