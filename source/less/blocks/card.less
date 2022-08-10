@@ -1,11 +1,63 @@
+.card {
+  position: relative;
+}
+
+.card__photo {
+  display: block;
+}
+
 .card__image {
   display: block;
+  width: 100%;
+  min-height: 280px;
+  object-fit: cover;
+
+  @media (min-width: @tablet) {
+    min-height: 267px;
+  }
+}
+
+.card__image--first {
+  @media (min-width: @tablet) {
+    min-height: 400px;
+  }
+}
+
+.card__footer {
+  padding: 15px 0 0;
+
+  @media (min-width: @tablet) {
+    padding: 22px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop) {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    color: @color-light;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.card__footer--dark {
+  @media (min-width: @tablet) and (max-width: @desktop) {
+    background-color: #eaeaea;
+  }
 }
 
 .card__title {
   margin: 0;
   font-weight: 700;
   color: @color-secondary;
+
+  @media (min-width: @desktop) {
+    color: @color-light;
+  }
 }
 
 .card__author {
