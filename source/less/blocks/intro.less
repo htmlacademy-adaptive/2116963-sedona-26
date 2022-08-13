@@ -1,13 +1,37 @@
 .intro {
   padding: 90px 20px 85px;
-  background: url("../img/intro/intro-background.jpg") center/cover no-repeat, #5496bd;
+  box-sizing: border-box;
+  width: 100%;
+  background: url("../img/intro/intro-triangle-1.svg") bottom no-repeat,
+    url("../img/intro/intro-background.jpg") bottom/auto 100% no-repeat,
+    #5496bd;
+
+  @media (min-width: @tablet) {
+    padding: 77px 20px 90px;
+  }
+
+  @media (min-width: @desktop) {
+    background-size: 100% auto;
+  }
 
   &--secondary {
     padding: 52px 45px 67px;
+    background-size: auto;
+    background-position: bottom, 50% 80%;
+
+    @media (min-width: @tablet) {
+      padding: 100px 45px 120px;
+      background-position: bottom;
+    }
   }
 }
 
 .intro__description-image {
   display: block;
   margin: 0 auto;
+  height: auto;
+
+  @media (min-width: @tablet) {
+    width: 460px;
+  }
 }

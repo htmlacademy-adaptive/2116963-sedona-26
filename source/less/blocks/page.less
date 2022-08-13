@@ -11,12 +11,19 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @color-main;
+  background-color: #e7e5e5;
 }
 
 .page__container {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 320px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background: @background-color-main;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  overflow: hidden;
 }
 
 .page__main {

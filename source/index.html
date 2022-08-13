@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,12 @@
       <nav class="header__navigation navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Главное меню.</span>
+          <svg class="navigation__toggle-icon" width="23" height="22" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+          </svg>
         </button>
+        <!-- ! navigation__list--active -->
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--current">Главная</a>
@@ -39,19 +45,21 @@
           alt="Добро пожаловать в Седону!">
       </div>
       <section class="advantages">
-        <div class="advantages__header text-block">
-          <h2 class="text-block__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <div class="advantages__header text-block text-block--advantages text-block--decorative">
+          <h2 class="text-block__title">Седона — небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</h2>
           <p class="text-block__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <ol class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--wide">
             <div class="advantages__container advantages__container--background">
               <h3 class="advantages__title">Настоящий городок</h3>
               <p class="advantages__number"></p>
               <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__image" width="520" height="260" src="img/advantages/street.jpg"
-              alt="Фото улицы Седоны.">
+            <div class="avdantages__image-warpper">
+              <img class="advantages__image" width="520" height="260" src="img/advantages/street.jpg"
+                alt="Фото улицы Седоны.">
+            </div>
             <ul class="advantages__list">
               <li class="advantages__item advantages__container">
                 <h4 class="advantages__title">Жилье</h4>
@@ -69,13 +77,15 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--wide">
             <div class="advantages__container advantages__container--background">
               <h3 class="advantages__title">Там есть Мост Дьявола</h3>
               <p class="advantages__number"></p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages__image" width="520" height="260" src="img/advantages/bridge.jpg" alt="Мост Дьявола.">
+            <div class="avdantages__image-warpper">
+              <img class="advantages__image" width="520" height="260" src="img/advantages/bridge.jpg" alt="Мост Дьявола.">
+            </div>
           </li>
           <li class="advantages__item advantages__container advantages__container--background--secondary">
             <h3 class="advantages__title">Небольшая площадь</h3>
@@ -97,7 +107,8 @@
       <section class="search">
         <div class="search__header text-block">
           <h2 class="text-block__title text-block__title--search">Заинтересовались?</h2>
-          <p class="text-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          <p class="text-block__description">Укажите предполагаемые даты поездки,
+            и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
             предложения гостиниц в седоне</p>
           <a class="search__button button" href="#">Найти Гостиницу</a>
         </div>
@@ -106,29 +117,35 @@
     </main>
 
     <footer class="footer">
-      <h2 class="visually-hidden">Контакты.</h2>
-      <a class="footer__title" href="index.html">#visitsedona</a>
-      <ul class="footer__socials socials">
-        <li class="socials__item">
-          <a class="socials__link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВК</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано</span>
-        <img class="copyright__logo" width="27" height="34" src="img/contacts/htmlacademy.svg" alt="HTML Academy.">
-      </a>
+      <div class="footer__container">
+        <h2 class="visually-hidden">Контакты.</h2>
+        <a class="footer__title" href="index.html">#visitsedona</a>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВК</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            aria-label="HTML Academy." focusable="false">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
 </body>
