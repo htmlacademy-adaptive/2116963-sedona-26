@@ -6,5 +6,3 @@ nav.classList.remove('navigation--active');
 navToggle.addEventListener('click', function() {
   nav.classList.toggle('navigation--active');
 });
-
-console.log('1');
