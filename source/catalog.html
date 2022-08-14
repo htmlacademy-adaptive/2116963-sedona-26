@@ -12,21 +12,26 @@
   <div class="page__container">
     <header class="header">
       <img class="header__logo" width="185" height="96" src="img/header/logo.svg" alt="Логотип Седоны.">
-      <nav class="header__navigation navigation">
+      <!-- ! navigation--active -->
+      <nav class="header__navigation navigation navigation--active">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Главное меню.</span>
-          <svg class="navigation__toggle-icon" width="23" height="22" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <svg class="navigation__toggle-icon navigation__toggle-icon--closed" width="23" height="22"
+            fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
           </svg>
+          <svg class="navigation__toggle-icon navigation__toggle-icon--opened" width="23" height="23"
+            fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path
+              d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
+          </svg>
         </button>
-        <!-- ! navigation__list--active -->
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link--current">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="form.html">Форма Отзыва</a>
@@ -161,6 +166,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
