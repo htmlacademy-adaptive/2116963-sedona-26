@@ -14,3 +14,27 @@
 .visually-hidden {
   .visually-hidden();
 }
+
+
+//Line breaks
+.br {
+  display: none;
+
+  &--mobile {
+    @media (max-width: @tablet) {
+      display: inline;
+    }
+  }
+
+  &--tablet {
+    @media (min-width: @tablet) and (max-width: @desktop) {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: @desktop) {
+      display: inline;
+    }
+  }
+}
