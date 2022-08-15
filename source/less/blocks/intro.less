@@ -6,23 +6,23 @@
     url("../img/intro/intro-background.jpg") bottom/auto 100% no-repeat,
     #5496bd;
 
-  @media (min-width: @tablet) {
-    padding: 77px 20px 90px;
-  }
-
-  @media (min-width: @desktop) {
-    background-size: 100% auto;
-  }
-
   &--secondary {
     padding: 52px 45px 67px;
     background-size: auto;
     background-position: bottom, 50% 80%;
+  }
 
-    @media (min-width: @tablet) {
+  @media (min-width: @tablet) {
+    padding: 77px 20px 90px;
+
+    &--secondary {
       padding: 100px 45px 120px;
       background-position: bottom;
     }
+  }
+
+  @media (min-width: @desktop) {
+    background-size: 100% auto;
   }
 }
 
