@@ -1,5 +1,6 @@
 .button {
   display: block;
+  padding: 16px;
   font-family: inherit;
   font-weight: 700;
   font-size: 21px;
@@ -9,4 +10,17 @@
   background-color: @background-color-secondary;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: @background-color-secondary-2;
+  }
+
+  &:active {
+    color: fade(@color-light, 30%);
+    background-color: @background-color-secondary-3;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
