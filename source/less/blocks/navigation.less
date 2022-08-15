@@ -30,6 +30,15 @@
   @media (min-width: @tablet) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .navigation__toggle-icon {
@@ -42,7 +51,7 @@
 
   &--closed {
     display: block;
-    color: @background-color-1;
+    color: @background-color-secondary;
   }
 
   &--opened {
@@ -62,7 +71,7 @@
   @media (min-width: @tablet) {
     position: static;
     display: grid;
-    align-items: center;
+    align-items: stretch;
     grid-template-columns: repeat(5, 20%);
     grid-template-areas: "item-1 item-2 . item-3 item-4";
   }
@@ -93,12 +102,14 @@
 .navigation__link {
   padding: 17px 10px 12px;
   display: block;
+  height: 100%;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-decoration: none;
-  color: #ffffff;
-  background-color: @background-color-1;
+  color: @color-light;
+  background-color: @background-color-secondary;
   text-align: center;
 
   @media (max-width: @tablet) {
@@ -108,6 +119,16 @@
 
     .navigation__item:not(:last-child) & {
       border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    }
+
+    &:not(&--current):hover,
+    &:not(&--current):focus {
+      background-color: @background-color-secondary-2;
+    }
+
+    &:not(&--current):active {
+      color: fade(@color-light, 30%);
+      background-color: @background-color-secondary-3;
     }
   }
 
@@ -119,5 +140,19 @@
     background-color: transparent;
     color: @color-secondary;
     box-shadow: none;
+
+    &--current {
+      color: #766357;
+    }
+
+    &:not(&--current):hover,
+    &:not(&--current):focus {
+      color: @background-color-secondary;
+    }
+
+    &:not(&--current):active {
+      color: @color-secondary;
+      opacity: 0.3;
+    }
   }
 }
