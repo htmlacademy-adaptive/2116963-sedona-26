@@ -1,16 +1,20 @@
 .navigation {
   position: relative;
 
-  @media (max-width: @tablet) {
-    &--active .navigation__toggle-icon--closed {
+  &--active .navigation__toggle-icon--closed {
+    @media (max-width: @tablet) {
       display: none;
     }
+  }
 
-    &--active .navigation__toggle-icon--opened {
+  &--active .navigation__toggle-icon--opened {
+    @media (max-width: @tablet) {
       display: block;
     }
+  }
 
-    &--active .navigation__list {
+  &--active .navigation__list {
+    @media (max-width: @tablet) {
       display: block;
     }
   }
@@ -78,8 +82,16 @@
 }
 
 .navigation__item {
-  @media (max-width: @tablet) {
-    &:last-child::after {
+  @media (min-width: @tablet) {
+    each(range(1, 4, 1), {
+      &:nth-child(@{index}) {
+        grid-area: ~"item-@{index}";
+      }
+    });
+  }
+
+  &:last-child::after {
+    @media (max-width: @tablet) {
       content: "";
       position: absolute;
       display: block;
@@ -88,14 +100,6 @@
       bottom: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
     }
-  }
-
-  @media (min-width: @tablet) {
-    each(range(1, 4, 1), {
-      &:nth-child(@{index}) {
-        grid-area: ~"item-@{index}";
-      }
-    });
   }
 }
 
@@ -112,25 +116,6 @@
   background-color: @background-color-secondary;
   text-align: center;
 
-  @media (max-width: @tablet) {
-    .navigation__item:not(:first-child) & {
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .navigation__item:not(:last-child) & {
-      border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-    }
-
-    &:not(&--current):hover {
-      background-color: @background-color-secondary-2;
-    }
-
-    &:not(&--current):active {
-      color: fade(@color-light, 30%);
-      background-color: @background-color-secondary-3;
-    }
-  }
-
   @media (min-width: @tablet) {
     padding-top: 18px;
     padding-bottom: 17px;
@@ -139,16 +124,43 @@
     background-color: transparent;
     color: @color-secondary;
     box-shadow: none;
+  }
 
-    &--current {
+  &--current {
+    @media (min-width: @tablet) {
       color: #766357;
     }
+  }
 
-    &:not(&--current):hover {
-      color: @background-color-secondary;
+  .navigation__item:not(:first-child) & {
+    @media (max-width: @tablet) {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .navigation__item:not(:last-child) & {
+    @media (max-width: @tablet) {
+      border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    }
+  }
+
+  &:not(&--current):hover {
+    @media (max-width: @tablet) {
+      background-color: @background-color-secondary-2;
     }
 
-    &:not(&--current):active {
+    @media (min-width: @tablet) {
+      color: @background-color-secondary;
+    }
+  }
+
+  &:not(&--current):active {
+    @media (max-width: @tablet) {
+      color: fade(@color-light, 30%);
+      background-color: @background-color-secondary-3;
+    }
+
+    @media (min-width: @tablet) {
       color: @color-secondary;
       opacity: 0.3;
     }
