@@ -90,13 +90,14 @@
   margin: 0 auto;
   list-style: none;
 
-  &--narrow {
-    width: 280px;
+  @media (max-width: (@tablet - 1px)) {
+    max-width: 350px;
   }
 
   &--right {
     @media (min-width: @tablet) {
       padding-left: 43px;
+      max-width: 400px;
     }
 
     @media (min-width: @desktop) {
@@ -108,6 +109,7 @@
   &--left {
     @media (min-width: @tablet) {
       padding-right: 43px;
+      max-width: 430px;
     }
 
     @media (min-width: @desktop) {
@@ -117,8 +119,6 @@
   }
 
   &--radio {
-    width: 280px;
-
     @media (min-width: @tablet) {
       width: 100%;
       display: grid;
@@ -133,8 +133,6 @@
   }
 
   &--checkbox {
-    width: 280px;
-
     @media (min-width: @tablet) {
       width: 100%;
       display: grid;
@@ -157,15 +155,24 @@
 
 .form__label {
   display: block;
+  margin-left: 16px;
+}
+
+.form__input-container {
+  position: relative;
 }
 
 .form__input {
   display: block;
-  padding: 0;
+  padding: 16px;
   width: 100%;
+  box-sizing: border-box;
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
+  background-color: @background-color-input;
+  border: none;
 
   &--textarea {
     width: 100%;
@@ -178,6 +185,39 @@
     font-size: 18px;
     line-height: 26px;
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: @background-color-input-2;
+  }
+
+  &:focus:not(:placeholder-shown) {
+    background-color: @background-color-main;
+    box-shadow: inset 0 0 0 4px @background-color-input-2;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 58px;
+  background-color: #e6e6e6;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--phone::after {
+    content: url("../img/form/phone.svg");
+  }
+
+  &--email::after {
+    content: url("../img/form/mail.svg");
   }
 }
 

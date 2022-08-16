@@ -2,19 +2,19 @@
   position: relative;
 
   &--active .navigation__toggle-icon--closed {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       display: none;
     }
   }
 
   &--active .navigation__toggle-icon--opened {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       display: block;
     }
   }
 
   &--active .navigation__list {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       display: block;
     }
   }
@@ -91,7 +91,7 @@
   }
 
   &:last-child::after {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       content: "";
       position: absolute;
       display: block;
@@ -133,19 +133,19 @@
   }
 
   .navigation__item:not(:first-child) & {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
   }
 
   .navigation__item:not(:last-child) & {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     }
   }
 
   &:not(&--current):hover {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       background-color: @background-color-secondary-2;
     }
 
@@ -155,7 +155,7 @@
   }
 
   &:not(&--current):active {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       color: fade(@color-light, 30%);
       background-color: @background-color-secondary-3;
     }

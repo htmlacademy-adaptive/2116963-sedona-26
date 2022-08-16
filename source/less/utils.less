@@ -21,13 +21,13 @@
   display: none;
 
   &--mobile {
-    @media (max-width: @tablet) {
+    @media (max-width: (@tablet - 1px)) {
       display: inline;
     }
   }
 
   &--tablet {
-    @media (min-width: @tablet) and (max-width: @desktop) {
+    @media (min-width: @tablet) and (max-width: (@desktop - 1px)) {
       display: inline;
     }
   }
