@@ -124,10 +124,12 @@
       display: grid;
       grid-template-columns: 280px 280px;
       justify-content: center;
+      align-items: center;
       column-gap: 16px;
     }
 
     @media (min-width: @desktop) {
+      padding-top: 17px;
       grid-template-columns: repeat(3, 280px);
     }
   }
@@ -142,6 +144,7 @@
     }
 
     @media (min-width: @desktop) {
+      padding: 31px 0 15px;
       display: flex;
       flex-wrap: wrap;
       column-gap: 64px;

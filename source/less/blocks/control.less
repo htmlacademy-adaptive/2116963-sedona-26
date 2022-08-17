@@ -1,6 +1,37 @@
 .control {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+}
+
+.control__input {
+  .visually-hidden();
+}
+
+.control__mark {
+  position: relative;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
+  background-color: @background-color-input;
+}
+
+.control__mark--radio {
+  border-radius: 50%;
+}
+
+.control__input--radio:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: @color-main;
+  border-radius: 50%;
 }
