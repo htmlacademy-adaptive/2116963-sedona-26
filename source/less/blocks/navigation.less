@@ -1,6 +1,18 @@
 .navigation {
   position: relative;
 
+  &--nojs .navigation__list {
+    @media (max-width: (@tablet - 1px)) {
+      display: block;
+    }
+  }
+
+  &--nojs .navigation__toggle {
+    @media (max-width: (@tablet - 1px)) {
+      display: none;
+    }
+  }
+
   &--active .navigation__toggle-icon--closed {
     @media (max-width: (@tablet - 1px)) {
       display: none;

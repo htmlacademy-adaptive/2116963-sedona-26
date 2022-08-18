@@ -5,14 +5,14 @@
 let nav = document.querySelector('.navigation');
 let navToggle = document.querySelector('.navigation__toggle');
 
-nav.classList.remove('navigation--active');
+nav.classList.remove('navigation--nojs');
 
 navToggle.addEventListener('click', function () {
   nav.classList.toggle('navigation--active');
 });
 
 /**
- * * Form validation with modal windows
+ * * Form modal windows
  */
 
 let form = document.querySelector('.review__form');
