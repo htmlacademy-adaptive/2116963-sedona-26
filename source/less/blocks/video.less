@@ -3,7 +3,7 @@
   max-width: 688px;
 
   @media (min-width: @tablet) {
-    padding: 0 60px 40px;
+    padding: 0 0 40px;
     max-width: none;
   }
 
@@ -27,7 +27,7 @@
   padding: 0 20px;
 
   @media (min-width: @tablet) {
-    padding: 0;
+    padding: 0 60px;
   }
 }
 
@@ -49,6 +49,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 48px;
-  height: 54px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 27px 48px;
+    border-top-color: transparent;
+    border-right: none;
+    border-bottom-color: transparent;
+    border-left-color: #ffffff;
+    opacity: 0.7;
+  }
+
+  &:hover::before {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  &:active::before {
+    transform: scale(1);
+  }
 }
