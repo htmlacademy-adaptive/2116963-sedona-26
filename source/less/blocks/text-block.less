@@ -1,6 +1,6 @@
 .text-block {
   text-align: center;
-  max-width: 435px;
+  max-width: 443px;
 
   &--advantages {
     max-width: 520px;
@@ -40,6 +40,12 @@
     font-size: 21px;
   }
 
+  &--large {
+    @media (min-width: @tablet) {
+      font-size: 30px;
+    }
+  }
+
   &--advantages {
     margin-bottom: 35px;
 
@@ -48,29 +54,19 @@
     }
   }
 
-
   &--search {
-    font-size: 21px;
-
-    @media (min-width: @tablet) {
-      font-size: 30px;
+    @media (max-width: (@tablet - 1px)) {
+      font-size: 21px;
     }
   }
 
   &--review {
     @media (min-width: @tablet) {
-      font-size: 30px;
       margin-bottom: 20px;
     }
 
     @media (min-width: @desktop) {
       margin-bottom: 24px;
-    }
-  }
-
-  &--modal {
-    @media (min-width: @tablet) {
-      font-size: 30px;
     }
   }
 }
