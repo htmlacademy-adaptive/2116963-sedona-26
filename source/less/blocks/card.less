@@ -27,16 +27,17 @@
   padding: 15px 0 0;
 
   @media (min-width: @tablet) {
-    padding: 22px 20px 15px;
+    padding: 22px 20px 10px;
+    min-height: 80px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: #f2f2f2;
   }
 
   @media (min-width: @desktop) {
     position: absolute;
-    box-sizing: border-box;
     width: 100%;
     bottom: 0;
     color: @color-light;
@@ -45,7 +46,7 @@
 }
 
 .card__footer--dark {
-  @media (min-width: @tablet) and (max-width: @desktop) {
+  @media (min-width: @tablet) and (max-width: (@desktop - 1px)) {
     background-color: #eaeaea;
   }
 }
@@ -63,4 +64,13 @@
 .card__author {
   margin: 0;
   text-transform: none;
+}
+
+.card__like {
+  margin-left: -10px;
+
+  @media (min-width: @tablet) {
+    margin: -4px -10px 0 0;
+    flex-shrink: 0;
+  }
 }

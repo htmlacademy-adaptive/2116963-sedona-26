@@ -44,12 +44,8 @@
 
 .catalog__item {
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 25px 20px 15px;
   border-top: 1px solid #e5e5e5;
-
-  &:last-child {
-    border-bottom: 1px solid #e5e5e5;
-  }
 
   @media (min-width: @tablet) {
     margin: 0;
@@ -66,6 +62,12 @@
 
     @media (min-width: @desktop) {
       grid-column: span 3;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: (@tablet - 1px)) {
+      border-bottom: 1px solid #e5e5e5;
     }
   }
 }

@@ -1,8 +1,31 @@
 .search__header {
   margin: 0 auto;
   padding: 38px 20px 49px;
+
+  @media (min-width: @tablet) {
+    padding: 61px 0 58px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 66px;
+  }
 }
 
 .search__button {
+  margin-top: 32px;
   max-width: 458px;
+
+  @media (min-width: @tablet) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 46px;
+  }
+}
+
+.search__map {
+  display: block;
+  width: 100%;
+  border: none;
 }

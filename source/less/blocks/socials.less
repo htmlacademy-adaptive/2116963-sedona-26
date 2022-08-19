@@ -8,9 +8,27 @@
 }
 
 .socials__link {
+  position: relative;
   display: block;
   margin: 0 6px 6px 0;
   width: 48px;
   height: 48px;
-  background-color: @background-color-1;
+  color: @color-light;
+  background-color: @background-color-secondary;
+
+  &:hover {
+    background-color: @background-color-secondary-2;
+  }
+
+  &:active {
+    color: fade(@color-light, 30%);
+    background-color: @background-color-secondary-3;
+  }
+}
+
+.socials__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
