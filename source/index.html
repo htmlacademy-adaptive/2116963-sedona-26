@@ -6,12 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__container">
     <header class="header">
-      <img class="header__logo" width="185" height="96" src="img/header/logo.svg" alt="Логотип Седоны.">
+      <a class="header__logo-link">
+        <img class="header__logo" width="185" height="96" src="img/header/logo.svg" alt="Логотип Седоны.">
+      </a>
       <!-- ! navigation--active -->
       <nav class="header__navigation navigation navigation--nojs">
         <button class="navigation__toggle" type="button">
@@ -63,8 +69,13 @@
               <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="avdantages__image-warpper">
-              <img class="advantages__image" width="520" height="260" src="img/advantages/street.jpg"
-                alt="Фото улицы Седоны.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="img/advantages/photo-city-desktop@1x.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
+                <img class="advantages__image" width="520" height="260" src="img/advantages/photo-city@1x.jpg"
+                  srcset="img/advantages/photo-city@1x.jpg 1x, img/advantages/photo-city@2x.jpg 2x"
+                  alt="Фото улицы Седоны.">
+              </picture>
             </div>
             <ul class="advantages__list">
               <li
@@ -95,8 +106,13 @@
                 осмелитесь, конечно</p>
             </div>
             <div class="avdantages__image-warpper">
-              <img class="advantages__image" width="520" height="260" src="img/advantages/bridge.jpg"
-                alt="Мост Дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                    srcset="img/advantages/photo-bridge-desktop@1x.jpg 1x, img/advantages/photo-bridge-desktop@2x.jpg 2x">
+                <img class="advantages__image advantages__image--second" width="520" height="260" src="img/advantages/photo-bridge@1x.jpg"
+                  srcset="img/advantages/photo-bridge@1x.jpg 1x, img/advantages/photo-bridge@2x.jpg 2x"
+                  alt="Мост Дьявола.">
+              </picture>
             </div>
           </li>
           <li

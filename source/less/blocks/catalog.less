@@ -4,11 +4,12 @@
 
   @media (min-width: @tablet) {
     padding: 0 60px;
-    max-width: none;
+    max-width: 800px;
   }
 
   @media (min-width: @desktop) {
     padding: 0;
+    max-width: none;
   }
 }
 
@@ -34,7 +35,6 @@
   @media (min-width: @tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
   }
 
   @media (min-width: @desktop) {
@@ -43,7 +43,6 @@
 }
 
 .catalog__item {
-  margin: 0 auto;
   padding: 25px 20px 15px;
   border-top: 1px solid #e5e5e5;
 
