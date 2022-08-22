@@ -4,11 +4,12 @@
 
   @media (min-width: @tablet) {
     padding: 0 60px;
-    max-width: none;
+    max-width: 800px;
   }
 
   @media (min-width: @desktop) {
     padding: 0;
+    max-width: none;
   }
 }
 
@@ -33,8 +34,7 @@
 
   @media (min-width: @tablet) {
     display: grid;
-    grid-template-columns: minmax(324px, 400px) minmax(324px, 400px);
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop) {
