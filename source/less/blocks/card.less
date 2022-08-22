@@ -1,5 +1,14 @@
 .card {
+  margin: 0 auto;
   position: relative;
+
+  @media (max-width: (@tablet - 1px)) {
+    max-width: 350px;
+  }
+
+  // @media (min-width: @tablet) {
+  //   max-width: 400px;
+  // }
 }
 
 .card__photo {
@@ -9,6 +18,7 @@
 .card__image {
   display: block;
   width: 100%;
+  height: auto;
   min-height: 280px;
   object-fit: cover;
 
@@ -20,6 +30,7 @@
 .card__image--first {
   @media (min-width: @tablet) {
     min-height: 400px;
+    max-height: 400px;
   }
 }
 
