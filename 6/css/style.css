@@ -1124,12 +1124,13 @@
 @media (min-width: 768px) {
   .catalog {
     padding: 0 60px;
-    max-width: none;
+    max-width: 800px;
   }
 }
 @media (min-width: 1200px) {
   .catalog {
     padding: 0;
+    max-width: none;
   }
 }
 .catalog__header {
@@ -1155,8 +1156,7 @@
 @media (min-width: 768px) {
   .catalog__list {
     display: grid;
-    grid-template-columns: minmax(324px, 400px) minmax(324px, 400px);
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
