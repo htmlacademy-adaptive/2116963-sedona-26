@@ -26,6 +26,7 @@
     }
 
     @media (min-width: @desktop) {
+      margin-bottom: 71px;
       width: auto;
     }
   }
@@ -42,7 +43,7 @@
   }
 
   &--wide--2 {
-    @media (min-width: @tablet) {
+    @media (min-width: @tablet) and (max-width: @desktop) {
       padding: 0 0 26px;
     }
   }
@@ -68,6 +69,11 @@
       padding-bottom: 15px;
     }
   }
+}
+
+.form__inner-container {
+  margin: 0 auto;
+  max-width: 768px;
 }
 
 .form__set {
@@ -143,11 +149,14 @@
       display: grid;
       grid-template-columns: 280px 280px;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       column-gap: 16px;
     }
 
     @media (min-width: @desktop) {
+      padding-left: 53px;
+      column-gap: 28px;
+      justify-content: start;
       padding-top: 17px;
       grid-template-columns: repeat(3, 280px);
     }
@@ -164,7 +173,7 @@
     }
 
     @media (min-width: @desktop) {
-      padding: 31px 0 15px;
+      padding: 32px 0 14px;
       display: flex;
       flex-wrap: wrap;
       column-gap: 64px;
@@ -203,9 +212,14 @@
 
   &--textarea {
     width: 100%;
-    height: 160px;
-    margin-bottom: 51px;
+    height: 150px;
+    margin-bottom: 56px;
     resize: none;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 51px;
+      height: 160px;
+    }
   }
 
   &::placeholder {
@@ -265,6 +279,10 @@
   margin-left: -3px;
   width: 100%;
   max-width: 324px;
+
+  @media (min-width: @desktop) {
+    max-width: 384px;
+  }
 }
 
 .form__marks {
