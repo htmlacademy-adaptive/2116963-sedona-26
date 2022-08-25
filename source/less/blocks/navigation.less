@@ -61,11 +61,9 @@
 
 .navigation__toggle-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%);
 
   &--closed {
     display: block;
@@ -149,6 +147,7 @@
   .navigation__item:not(:first-child) & {
     @media (max-width: (@tablet - 1px)) {
       border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 16px;
     }
   }
 
