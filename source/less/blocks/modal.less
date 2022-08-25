@@ -39,7 +39,11 @@
   }
 
   &--success {
-    padding-bottom: 50px;
+    padding-bottom: 52px;
+
+    @media (min-width: @tablet) {
+      padding-top: 45px;
+    }
   }
 }
 
@@ -54,13 +58,18 @@
 
 .modal__button {
   margin: 0 auto;
+  font-size: 18px;
+
+  @media (min-width: @tablet) {
+    font-size: 21px;
+  }
 
   &--error {
     margin-top: 28px;
     width: 180px;
 
     @media (min-width: @tablet) {
-      margin-top: 50px;
+      margin-top: 48px;
       width: 100%;
     }
   }
