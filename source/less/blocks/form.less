@@ -19,21 +19,21 @@
     }
 
     @media (min-width: @tablet) {
-      margin-bottom: 64px;
+      margin-bottom: 48px;
       padding: 0;
       width: 50%;
       box-sizing: border-box;
     }
 
     @media (min-width: @desktop) {
-      margin-bottom: 71px;
+      margin-bottom: 55px;
       width: auto;
     }
   }
 
   &--wide {
     @media (min-width: @tablet) {
-      padding: 0 0 48px;
+      padding: 0 0 32px;
       width: 100%;
     }
 
@@ -184,8 +184,10 @@
 .form__item {
   margin: 0 0 16px;
 
-  &:last-child {
-    margin: 0;
+  @media (max-width: (@tablet - 1px)) {
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
