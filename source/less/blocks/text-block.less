@@ -27,6 +27,10 @@
       display: none;
     }
   }
+
+  &--video {
+    max-width: 445px;
+  }
 }
 
 .text-block__title {
@@ -43,6 +47,7 @@
   &--large {
     @media (min-width: @tablet) {
       font-size: 30px;
+      line-height: 40px;
     }
   }
 
@@ -50,19 +55,20 @@
     margin-bottom: 35px;
 
     @media (min-width: @tablet) {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
   }
 
   &--search {
     @media (max-width: (@tablet - 1px)) {
+      margin-bottom: 22px;
       font-size: 21px;
     }
   }
 
   &--review {
     @media (min-width: @tablet) {
-      margin-bottom: 20px;
+      margin-bottom: 17px;
     }
 
     @media (min-width: @desktop) {

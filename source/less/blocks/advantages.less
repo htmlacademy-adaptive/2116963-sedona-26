@@ -1,9 +1,9 @@
 .advantages__header {
   margin: 0 auto;
-  padding: 32px 18px 0;
+  padding: 34px 19px 0 17px;
 
   @media (min-width: @tablet) {
-    padding-top: 48px;
+    padding-top: 50px;
     padding-bottom: 56px;
   }
 
@@ -38,7 +38,7 @@
 .advantages__container {
   position: relative;
   box-sizing: border-box;
-  padding: 35px 25px 35px;
+  padding: 35px 26px 39px 23px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -73,7 +73,7 @@
   }
 
   &--smaller {
-    padding: 25px 35px 25px;
+    padding: 24px 35px 25px;
 
     @media (min-width: @tablet) {
       padding: 41px 33px;
@@ -85,12 +85,12 @@
   }
 
   &--inner {
-    padding: 22px 18px 0 70px;
+    padding: 26px 17px 0 65px;
     align-items: flex-start;
     text-align: start;
 
     @media (min-width: @tablet) {
-      padding: 158px 31px 40px;
+      padding: 156px 31px 40px;
       align-items: center;
       text-align: center;
       min-height: 330px;
@@ -108,14 +108,14 @@
   &--inner::before {
     content: "";
     position: absolute;
-    top: 22px;
-    left: 20px;
+    top: 23px;
+    left: 19px;
     width: 40px;
     height: 40px;
 
     @media (min-width: @tablet) {
       position: absolute;
-      top: 60px;
+      top: 58px;
       left: 50%;
       transform: translateX(-50%);
       width: 75px;
@@ -127,8 +127,20 @@
     background: url("../img/advantages/icon-house.svg") center/contain no-repeat;
   }
 
+  &--inner--food {
+    @media (max-width: (@tablet - 1px)) {
+      padding-left: 70px;
+    }
+  }
+
   &--inner--food::before {
-    background: url("../img/advantages/icon-burger.svg") center/contain no-repeat;
+    background: url("../img/advantages/icon-food.svg") center/contain no-repeat;
+  }
+
+  &--inner--present {
+    @media (max-width: (@tablet - 1px)) {
+      padding-left: 63px;
+    }
   }
 
   &--inner--present::before {
@@ -148,6 +160,7 @@
   display: block;
   width: 100%;
   object-fit: cover;
+  height: 260px;
 
   @media (min-width: @tablet) {
     position: absolute;
@@ -166,7 +179,7 @@
   color: @color-secondary;
 
   @media (min-width: @tablet) {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     font-size: 21px;
   }
 
@@ -176,7 +189,7 @@
 
     @media (min-width: @tablet) {
       margin-top: 0;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
   }
 }
