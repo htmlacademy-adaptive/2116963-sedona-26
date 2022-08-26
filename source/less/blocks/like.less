@@ -2,9 +2,16 @@
   display: flex;
   padding: 10px;
   border: none;
-  color: inherit;
+  color: @color-secondary;
   background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   cursor: pointer;
+
+  @media (min-width: @desktop) {
+    color: inherit;
+  }
 
   &:hover {
     color: @background-color-secondary;
@@ -22,7 +29,7 @@
 }
 
 .like__icon {
-  margin: 0 14px 3px 0;
+  margin: 0 14px 4px 0;
   opacity: 0.3;
 
   @media (min-width: @tablet) {
