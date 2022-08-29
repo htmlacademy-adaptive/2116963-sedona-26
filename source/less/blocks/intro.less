@@ -3,19 +3,12 @@
   box-sizing: border-box;
   width: 100%;
   background: url("../img/intro/intro-triangle-1.svg") center 100.1% no-repeat,
-    image-set(
-      url("../img/intro/intro-background@1x.webp") type("image/webp"),
-      url("../img/intro/intro-background@1x.jpg") type("image/jpeg")
-    )
-    bottom/auto 100.05% no-repeat,
+    url("../img/intro/intro-background@1x.jpg") bottom/auto 100.05% no-repeat,
     #5496bd;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro/intro-triangle-1.svg"),
-      image-set(
-        url("../img/intro/intro-background@2x.webp") type("image/webp"),
-        url("../img/intro/intro-background@2x.jpg") type("image/jpeg")
-      );
+      url("../img/intro/intro-background@2x.jpg");
   }
 
   @media (min-width: @tablet) {
