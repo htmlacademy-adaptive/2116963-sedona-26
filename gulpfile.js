@@ -66,7 +66,8 @@ const createWebp = () => {
     'source/img/**/*.{jpg,png}',
     '!source/img/favicons/**',
     '!source/img/intro/**',
-    '!source/img/video/video-poster.jpg'])
+    '!source/img/video/video-poster.jpg'
+  ])
   .pipe(squoosh({
     webp: {}
   }))

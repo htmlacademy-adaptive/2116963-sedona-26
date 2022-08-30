@@ -1,5 +1,6 @@
 /**
- * * Navigation menu open/close
+ * Navigation menu open/close
+ * Open menu on movile: 'navigation--active' class
  */
 
 let nav = document.querySelector('.navigation');
@@ -12,7 +13,8 @@ navToggle.addEventListener('click', function () {
 });
 
 /**
- * * Form modal windows
+ * Form modal windows
+ * Show modal window: 'modal--active' class
  */
 
 let form = document.querySelector('.review__form');
