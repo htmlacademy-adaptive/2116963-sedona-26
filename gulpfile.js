@@ -88,6 +88,7 @@ const sprite = () => {
   .pipe(cheerio({
     run: ($) => {
         $('[fill]').removeAttr('fill');
+        $('[opacity]').removeAttr('opacity');
     },
     parserOptions: { xmlMode: true }
   }))
@@ -109,7 +110,7 @@ const copy = () => {
 
 //Clean
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync('build');
 }
 
