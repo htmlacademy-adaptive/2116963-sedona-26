@@ -1,6 +1,6 @@
 /**
  * Navigation menu open/close
- * Open menu on movile: 'navigation--active' class
+ * Open menu on mobile: 'navigation--active' class
  */
 
 let nav = document.querySelector('.navigation');
