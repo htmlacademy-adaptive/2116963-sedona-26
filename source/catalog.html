@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -17,6 +17,7 @@
     <header class="header">
       <a class="header__logo-link" href="index.html">
         <img class="header__logo" width="185" height="96" src="img/header/logo.svg" alt="Логотип Седоны.">
+        <span class="visually-hidden">Перейти на главную старницу.</span>
       </a>
       <nav class="header__navigation navigation navigation--nojs">
         <button class="navigation__toggle" type="button">
@@ -62,6 +63,12 @@
             <div class="card">
               <a class="card__photo" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -91,6 +98,12 @@
             <div class="card">
               <a class="card__photo" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -119,6 +132,12 @@
             <div class="card">
               <a class="card__photo" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -147,6 +166,12 @@
             <div class="card">
               <a class="card__photo" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -183,7 +208,6 @@
           <video class="video__item" width="280" height="177" poster="img/video/video-poster.jpg"></video>
           <button class="video__play" type="button">
             <span class="visually-hidden">Проигрывать видео.</span>
-            <span class="video__play-icon"></span>
           </button>
         </div>
       </section>
@@ -229,7 +253,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/app.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 
 </html>
