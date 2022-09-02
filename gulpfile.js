@@ -49,7 +49,10 @@ const scripts = () => {
 //Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src([
+    'source/img/**/*.{jpg,png}',
+    '!source/img/intro/**'
+  ])
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 }
@@ -103,7 +106,8 @@ const copy = () => {
   return gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/favicon.ico',
-    'source/manifest.webmanifest'
+    'source/manifest.webmanifest',
+    'source/img/intro/**'
   ], {base: 'source'})
   .pipe(gulp.dest('build'));
 }
