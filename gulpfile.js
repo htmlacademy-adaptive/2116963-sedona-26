@@ -51,14 +51,17 @@ const scripts = () => {
 const optimizeImages = () => {
   return gulp.src([
     'source/img/**/*.{jpg,png}',
-    '!source/img/intro/**'
+    '!source/img/intro/mobile/**'
   ])
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src([
+    'source/img/**/*.{jpg,png}',
+    '!source/img/intro/mobile/**'
+  ])
   .pipe(gulp.dest('build/img'));
 }
 
@@ -80,7 +83,11 @@ const createWebp = () => {
 //SVG
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg' ])
+  return gulp.src([
+    'source/img/**/*.svg',
+    '!source/img/icons/*.svg',
+    '!source/img/icons-ready/*.svg'
+  ])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
@@ -107,7 +114,8 @@ const copy = () => {
     'source/fonts/*.{woff2,woff}',
     'source/favicon.ico',
     'source/manifest.webmanifest',
-    'source/img/intro/**'
+    'source/img/intro/mobile/**',
+    'source/img/icons-ready/*.svg'
   ], {base: 'source'})
   .pipe(gulp.dest('build'));
 }
