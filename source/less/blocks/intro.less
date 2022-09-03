@@ -2,13 +2,11 @@
   padding: 90px 20px 86px;
   box-sizing: border-box;
   width: 100%;
-  background: url("../img/intro/intro-triangle-1.svg") center 100.1% no-repeat,
-    url("../img/intro/intro-background@1x.jpg") bottom/auto 100.05% no-repeat,
+  background: url("../img/intro/mobile/intro-background-mobile@1x.jpg") bottom/auto 100.05% no-repeat,
     #5496bd;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro/intro-triangle-1.svg"),
-      url("../img/intro/intro-background@2x.jpg");
+    background-image: url("../img/intro/mobile/intro-background-mobile@2x.jpg");
   }
 
   @media (min-width: @tablet) {
@@ -16,18 +14,23 @@
   }
 
   @media (min-width: @desktop) {
+    background-image: url("../img/intro/intro-background-desktop@1x.jpg");
     background-size: 100% auto;
+  }
+
+  @media (min-width: @desktop) and (min-resolution: 2dppx) {
+    background-image: url("../img/intro/intro-background-desktop@2x.jpg");
   }
 
   &--secondary {
     padding: 52px 45px 67px;
-    background-size: auto, 902px auto;
-    background-position: bottom, 50% 100%;
+    background-position: 50% 100%;
+    background-size: 902px auto;
 
     @media (min-width: @tablet) {
       padding: 95px 45px 117px;
-      background-size: auto, 1200px auto;
       background-position: bottom;
+      background-size: 1200px auto;
     }
 
     @media (min-width: @desktop) {
