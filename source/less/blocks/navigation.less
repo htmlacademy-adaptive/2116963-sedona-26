@@ -95,7 +95,8 @@
 
 .navigation__item {
   @media (min-width: @tablet) {
-    each(range(1, 4, 1), {
+    @items: 4;
+    each(range(1, @items, 1), {
       &:nth-child(@{index}) {
         grid-area: ~"item-@{index}";
       }
