@@ -103,6 +103,16 @@
     font-size: 21px;
   }
 
+  .form__container--narrow & {
+    @media (min-width: @tablet) {
+      max-width: 300px;
+    }
+
+    @media (min-width: @desktop) {
+      max-width: 400px;
+    }
+  }
+
   .form__container--wide & {
     @media (min-width: @tablet) {
       width: 400px;
@@ -173,8 +183,9 @@
     }
 
     @media (min-width: @desktop) {
-      padding: 32px 0 14px;
+      padding: 32px 0 14px 45px;
       display: flex;
+      justify-content: flex-start;
       flex-wrap: wrap;
       column-gap: 64px;
     }
