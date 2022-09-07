@@ -25,19 +25,21 @@ let modalButtonError = document.querySelector('.modal__button--error');
 let modalButtonSuccess = document.querySelector('.modal__button--success');
 let active = 'modal--active';
 
-form.addEventListener('submit', function () {
-  modalError.classList.remove(active);
-  modalSuccess.classList.add(active);
-});
+if (form) {
+  form.addEventListener('submit', function () {
+    modalError.classList.remove(active);
+    modalSuccess.classList.add(active);
+  });
 
-formSubmit.addEventListener('click', function () {
-  modalError.classList.add(active);
-});
+  formSubmit.addEventListener('click', function () {
+    modalError.classList.add(active);
+  });
 
-modalButtonError.addEventListener('click', function () {
-  modalError.classList.remove(active);
-});
+  modalButtonError.addEventListener('click', function () {
+    modalError.classList.remove(active);
+  });
 
-modalButtonSuccess.addEventListener('click', function () {
-  modalSuccess.classList.remove(active);
-});
+  modalButtonSuccess.addEventListener('click', function () {
+    modalSuccess.classList.remove(active);
+  });
+}

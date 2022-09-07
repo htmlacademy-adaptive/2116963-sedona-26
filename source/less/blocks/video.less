@@ -1,11 +1,11 @@
 .video {
-  margin: 0 auto -8px;
-  max-width: 688px;
+  margin: 0 auto -10px;
+  max-width: 500px;
 
   @media (min-width: @tablet) {
     margin: 0 auto;
     padding: 0 0 40px;
-    max-width: none;
+    max-width: 920px;
   }
 
   @media (min-width: @desktop) {
@@ -29,22 +29,33 @@
 
 .video__content {
   position: relative;
-  padding: 0 20px;
+  margin: 0 20px;
 
   @media (min-width: @tablet) {
-    padding: 0 60px;
+    margin: 0 60px;
+    height: 500px;
   }
 }
 
 .video__item {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video__item--active {
+  display: block;
+}
+
+.video__poster {
   display: block;
   width: 100%;
   height: auto;
 
   @media (min-width: @tablet) {
-    margin: 0 auto;
-    height: 500px;
-    max-width: 800px;
+    height: 100%;
     object-fit: cover;
   }
 }

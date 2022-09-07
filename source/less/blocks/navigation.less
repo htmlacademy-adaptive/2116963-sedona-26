@@ -1,6 +1,5 @@
 .navigation {
   position: relative;
-  z-index: 1;
 
   &--nojs .navigation__list {
     @media (max-width: (@tablet - 1px)) {
@@ -96,7 +95,8 @@
 
 .navigation__item {
   @media (min-width: @tablet) {
-    each(range(1, 4, 1), {
+    @items: 4;
+    each(range(1, @items, 1), {
       &:nth-child(@{index}) {
         grid-area: ~"item-@{index}";
       }
@@ -117,7 +117,7 @@
 }
 
 .navigation__link {
-  padding: 17px 10px 12px;
+  padding: 17px 15px 12px;
   display: block;
   height: 100%;
   box-sizing: border-box;
@@ -130,13 +130,27 @@
   text-align: center;
 
   @media (min-width: @tablet) {
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding: 18px 10px 17px;
     font-size: 14px;
     line-height: 21px;
     background-color: transparent;
     color: @color-secondary;
     box-shadow: none;
+  }
+
+  .navigation__item:first-child & {
+    @media (max-width: (@tablet - 1px)) {
+      text-indent: 45px;
+    }
+  }
+
+  .navigation__item:first-child &::before {
+    @media (max-width: (@tablet - 1px)) {
+      content: "";
+      width: 45px;
+      height: 40px;
+      float: right;
+    }
   }
 
   &--current {
