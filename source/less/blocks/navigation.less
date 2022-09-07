@@ -139,7 +139,9 @@
   }
 
   .navigation__item:first-child & {
-    text-indent: 45px;
+    @media (max-width: (@tablet - 1px)) {
+      text-indent: 45px;
+    }
   }
 
   .navigation__item:first-child &::before {
