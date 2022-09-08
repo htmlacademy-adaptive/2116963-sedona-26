@@ -21,12 +21,12 @@
   @media (min-width: @tablet) {
     min-height: 267px;
   }
-}
 
-.card__image--first {
-  @media (min-width: @tablet) {
-    min-height: 400px;
-    max-height: 400px;
+  &--first {
+    @media (min-width: @tablet) {
+      min-height: 400px;
+      max-height: 400px;
+    }
   }
 }
 
@@ -50,11 +50,11 @@
     color: @color-light;
     background-color: rgba(0, 0, 0, 0.3);
   }
-}
 
-.card__footer--dark {
-  @media (min-width: @tablet) and (max-width: (@desktop - 1px)) {
-    background-color: #eaeaea;
+  &--dark {
+    @media (min-width: @tablet) and (max-width: (@desktop - 1px)) {
+      background-color: #eaeaea;
+    }
   }
 }
 
@@ -80,6 +80,5 @@
 
   @media (min-width: @tablet) {
     margin: -4px -10px 0 0;
-    // flex-shrink: 0;
   }
 }
