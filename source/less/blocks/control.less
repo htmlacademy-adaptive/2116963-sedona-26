@@ -21,51 +21,51 @@
   height: 46px;
   background-color: @background-color-input;
   border-radius: 4px;
-}
 
-.control__mark--radio {
-  border-radius: 50%;
-}
+  &--radio {
+    border-radius: 50%;
+  }
 
-.control__input:checked + .control__mark::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .control__input:checked + &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.control__input--radio:checked + .control__mark::before {
-  width: 16px;
-  height: 16px;
-  background-color: @color-main;
-  border-radius: 50%;
-}
+  .control__input--radio:checked + &::before {
+    width: 16px;
+    height: 16px;
+    background-color: @color-main;
+    border-radius: 50%;
+  }
 
-.control__input--checkbox:checked + .control__mark::before {
-  content: url("../img/form/tick.svg");
-}
+  .control__input--checkbox:checked + &::before {
+    content: url("../img/form/tick.svg");
+  }
 
-.control:hover .control__mark {
-  background-color: @background-color-input-2;
-}
+  .control:hover & {
+    background-color: @background-color-input-2;
+  }
 
-.control__input:focus-visible + .control__mark {
-  outline: 2px solid #000000;
-}
+  .control__input:focus-visible + & {
+    outline: 2px solid #000000;
+  }
 
-.control__input:active + .control__mark {
-  background-color: @background-color-input-3;
-}
+  .control__input:active + & {
+    background-color: @background-color-input-3;
+  }
 
-.control__input:active + .control__mark::before {
-  opacity: 0.3;
-}
+  .control__input:active + &::before {
+    opacity: 0.3;
+  }
 
-.control__input:disabled + .control__mark {
-  background-color: @background-color-input-3;
-}
+  .control__input:disabled + & {
+    background-color: @background-color-input-3;
+  }
 
-.control__input:disabled + .control__mark::before {
-  opacity: 0.3;
+  .control__input:disabled + &::before {
+    opacity: 0.3;
+  }
 }
