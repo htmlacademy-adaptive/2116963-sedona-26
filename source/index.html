@@ -71,7 +71,7 @@
               <p class="advantages__number"></p>
               <p class="advantages__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="avdantages__image-warpper">
+            <div class="advantages__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/advantages/photo-city-desktop@1x.webp 1x, img/advantages/photo-city-desktop@2x.webp 2x">
@@ -119,7 +119,7 @@
                 <span class="tag tag--mobile tag--tablet">&nbsp;</span>Если вы осмелитесь, конечно
               </p>
             </div>
-            <div class="avdantages__image-warpper">
+            <div class="advantages__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/advantages/photo-bridge-desktop@1x.webp 1x, img/advantages/photo-bridge-desktop@2x.webp 2x">
@@ -171,11 +171,24 @@
             предложения гостиниц в седоне</p>
           <a class="search__button button" href="#">Найти Гостиницу</a>
         </div>
-        <iframe class="search__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8880957644!2d-112.35544184504681!3d34.854373381018476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661855370673!5m2!1sru!2sru"
-          width="600" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Седона, Аризона 86336, США">
-        </iframe>
+        <div class="search__map">
+          <span class="visually-hidden">Седона на карте.</span>
+          <iframe class="search__map-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8880957644!2d-112.35544184504681!3d34.854373381018476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661855370673!5m2!1sru!2sru"
+            width="600" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Седона, Аризона 86336, США">
+          </iframe>
+          <noscript>
+            <picture>
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/map/map.webp 1x, img/map/map@2x.webp 2x">
+              <source media="(min-width: 769px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+              <img class="search__image" width="600" height="350" src="img/map/map.jpg"
+                srcset="img/map/map.jpg 1x, img/map/map@2x.jpg 2x" alt="Седона, Аризона 86336, США" loading="lazy">
+            </picture>
+          </noscript>
+        </div>
       </section>
     </main>
 
